@@ -18,15 +18,15 @@ This hands on lab consists of the following steps:
 ## Setting up your CodeSpaces development environment
 Now before we continue the hands-on lab, go to your repository and start your Codespace instance by clicking the button `Code`, then the tab `Codespaces` and select `New Codespace`.
 
-![starting codespaces](../images/codespaces.png)
+![starting codespaces](https://raw.githubusercontent.com/Microsoft-Bootcamp/mslabs/main/images/codespaces.png?token=GHSAT0AAAAAABSOMIXHEI5OJYOKZFLXSLFIYRYI32A)
 
 The first time you create a Codespace You will see the following screen.
 
-![creating codespace container](../images/settingup-codespaces.png)
+![creating codespace container](https://github.com/Microsoft-Bootcamp/mslabs/raw/main/images/settingup-codespaces.png)
 Please wait for this to complete. The reason it takes some more time the first time has to do with the fact the container needs to be build for the first time. Next time you start a Codespace you will get access in a few seconds.
 
 When your Codespace is ready you will see the full IDE appear in your browser. This is a full Visual Studio Code experience in your browser! This looks as follows:
-![code space ide](../images/codespace-ide.png)
+![code space ide](https://github.com/Microsoft-Bootcamp/mslabs/raw/main/images/settingup-codespaces.png)
 
 The place where we will do all our work for this hands-on lab is in the terminal window, that you can find in the right bottom part. It should show you a command-line and it is currently in the folder `/workspaces/<your-repo-name> (main)`
   
@@ -65,7 +65,7 @@ If codespaces was unable to pull the image you can try to pull it manually.
 
 You need a Personal Access Token with at least the `read:packages` and `workflow` permissions:
 
-![Packages (Read) PAT](../images/create-ghcr-path.PNG)
+![Packages (Read) PAT](https://github.com/Microsoft-Bootcamp/mslabs/raw/main/images/create-ghcr-path.PNG)
 
 Then you can run:
 
@@ -239,7 +239,7 @@ See https://lostisland.github.io/faraday/middleware/authentication for more usag
 The last line shows you a pull request that got created on the target repository that contains the migrated workflow.
 This will look as follows:
 
-![pull request](../images/workflow-pullrequest.png)
+![pull request](https://github.com/Microsoft-Bootcamp/mslabs/raw/main/images/workflow-pullrequest.png)
 
 Now, inspect the pull request and the action workflow that is part of the pull request.
 Accept the pull request and run the workflow manually.
