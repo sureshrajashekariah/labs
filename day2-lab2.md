@@ -39,19 +39,19 @@ To enable GitHub Code Scanning, please navigate to the `Settings` of your reposi
 
 You'll be directed to the `Get started with Code Scanning` form, from where you can set up code scanning to use the *CodeQL Analysis* product maintained by GitHub or a third-party code scanning tool. For this lab, we'll pick the CodeQL product. To enable this, you'll click the `Set up this workflow` for the `CodeQL Analysis` product maintained by Github.
 
-![Code Scanning - Get started](../images/getstartedwithcodescanning.PNG)
+![Code Scanning - Get started](https://github.com/Microsoft-Bootcamp/mslabs/blob/main/images/getstartedwithcodescanning.PNG)
 
 After this step, a `codeql-analysis.yml` file is generated for you. For most projects, this workflow file will not need changes; you can simply commit it to your repository. 
 
-![Code Scanning - Commit](../images/codescanningcommit.PNG)
+![Code Scanning - Commit](https://github.com/Microsoft-Bootcamp/mslabs/blob/main/images/codescanningcommit.PNG)
 
 Once your changes are committed, you will see the `codeql-analysis.yml` file in the new directory `./github/workflows`.
 
-![Code Scanning - CodeQL Analysis Workflow](../images/codeqlanalysisyml.PNG)
+![Code Scanning - CodeQL Analysis Workflow](https://github.com/Microsoft-Bootcamp/mslabs/blob/main/images/codeqlanalysisyml.PNG)
 
 When you click the file `codeql-analysis.yml`, you get to see the option `View runs`. 
 
-![Code Scanning - CodeQL view runs](../images/codeqlviewruns.PNG)
+![Code Scanning - CodeQL view runs](https://github.com/Microsoft-Bootcamp/mslabs/blob/main/images/codeqlviewruns.PNG)
 
 From here, you can see the list of workflows with the CodeQL workflow and the run history of the CodeQL workflow. In the default CodeQL analysis workflow, code scanning is configured to analyze your code each time you either push a change to the default branch or any protected branches, or raise a pull request against the default branch. As a result, code scanning will now commence. As you can see on the below screenshot, the workflow is currently running.
 
