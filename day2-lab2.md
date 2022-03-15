@@ -55,7 +55,7 @@ When you click the file `codeql-analysis.yml`, you get to see the option `View r
 
 From here, you can see the list of workflows with the CodeQL workflow and the run history of the CodeQL workflow. In the default CodeQL analysis workflow, code scanning is configured to analyze your code each time you either push a change to the default branch or any protected branches, or raise a pull request against the default branch. As a result, code scanning will now commence. As you can see on the below screenshot, the workflow is currently running.
 
-![Code Scanning - CodeQL run history](../images/codeqlrunhistory.PNG)
+![Code Scanning - CodeQL run history](https://github.com/Microsoft-Bootcamp/mslabs/raw/main/images/codeqlrunhistory.PNG)
 
 Reviewing any failed analysis job
 
@@ -73,22 +73,22 @@ CodeQL requires a build of compiled languages, and an analysis job can fail if o
 ```
 After some minutes, generally around 7 to 8 minutes, the workflow run will be completed and you will see the status being updated.
 
-![Code Scanning - CodeQL views runs (completed)](../images/codeqlviewruns_completed.PNG)
+![Code Scanning - CodeQL views runs (completed)](https://github.com/Microsoft-Bootcamp/mslabs/raw/main/images/codeqlviewruns_completed.PNG)
 
 Clicking through on the workflow run, by clicking on `Create codeql-analysis.yml`, you can see the details of the workflow run. 
 
-![Code Scanning - CodeQL workflow completed](../images/codeqlworkflow_completed.PNG)
+![Code Scanning - CodeQL workflow completed](https://github.com/Microsoft-Bootcamp/mslabs/raw/main/images/codeqlworkflow_completed.PNG)
 
 Great, now that your CodeQL workflow is completed, we can move on and discover the way your Code Scanning outcomes can be analyzed. 
 
 ### Analyzing Code Scanning outcomes
 When you navigate to the `Security` tab on your repository, and click `Code Scanning alerts`, you can see the active alerts for Code Scanning. From this view, you can view, fix, dismiss, or delete alerts for potential vulnerabilities or errors in your project's code.
 
-![Code Scanning - Security Tab](../images/codescanning_securitytab.PNG)
+![Code Scanning - Security Tab](https://github.com/Microsoft-Bootcamp/mslabs/raw/main/images/codescanning_securitytab.PNG)
 
 Each alert highlights a problem with the code and the name of the tool that identified it. You can see the line of code that triggered the alert, as well as properties of the alert, such as the severity, security severity, and the nature of the problem. Alerts also tell you when the issue was first introduced. For alerts identified by CodeQL analysis, you will also see information on how to fix the problem.
 
-![Code Scanning - Alerts details](../images/codescanningalertdetails.PNG)
+![Code Scanning - Alerts details](https://github.com/Microsoft-Bootcamp/mslabs/raw/main/images/codescanningalertdetails.PNG)
 
 For more detailed information on managing the Code Scanning alerts, refer to: [https://docs.github.com/en/code-security/code-scanning/automatically-scanning-your-code-for-vulnerabilities-and-errors/managing-code-scanning-alerts-for-your-repository](https://docs.github.com/en/code-security/code-scanning/automatically-scanning-your-code-for-vulnerabilities-and-errors/managing-code-scanning-alerts-for-your-repository)
 
@@ -104,13 +104,13 @@ For GitHub Secret SCanning documentation, please refer to: [https://docs.github.
 ### Enabling Secret Scanning functionality
 Depending on your GitHub settings Secret Scanning may already be enabled. To turn GitHub Secret Scanning, please navigate to the `Settings` of your repository, click `Security & analysis` click `Enable` for the `Secret Scanning` feature.
 
-![Secret Scanning - Enable](../images/secretscanningenable.PNG)
+![Secret Scanning - Enable](https://github.com/Microsoft-Bootcamp/mslabs/raw/main/images/secretscanningenable.PNG)
 
 Secret Scanning is now enabled for your repository. 
 
 GitHub performs secret scanning on public and private repositories for secret patterns provided by GitHub and GitHub partners. However, there can be situations where you want to scan for other secret patterns in your private repositories. For example, you might have a secret pattern that is internal to your organization. For these situations, you can define custom secret scanning patterns in your enterprise, organization, or private repository on GitHub.
 
-![Secret Scanning - Custom Patterns](../images/secretscanningcustompatterns.PNG)
+![Secret Scanning - Custom Patterns](https://github.com/Microsoft-Bootcamp/mslabs/raw/main/images/secretscanningcustompatterns.PNG)
 
 You can define up to 20 custom patterns for each private repository, organization, or enterprise account and options to define these are enabled after you enable the `Secret Scanning` feature in your `Security & analysis` settings. We'll not go into the custom patterns in this lab, but for more information refer to: [https://docs.github.com/en/code-security/secret-scanning/defining-custom-patterns-for-secret-scanning](https://docs.github.com/en/code-security/secret-scanning/defining-custom-patterns-for-secret-scanning)
 
@@ -119,11 +119,11 @@ Now that you've set up Secret Scanning, let's understand where you can view the 
 ### Managing Secret Scanning alerts
 When you navigate to the `Security` tab on your repository, and click `Secret Scanning alerts`, you can see the active alerts for Secret Scanning. Here, you can view and close alerts for secrets checked in to your repository.
 
-![Secret Scanning - Alerts](../images/secretscanningalerts.PNG)
+![Secret Scanning - Alerts](https://github.com/Microsoft-Bootcamp/mslabs/raw/main/images/secretscanningalerts.PNG)
 
 When you click on a Secret Scanning alert, you can see it's details.
 
-![Secret Scanning - Alert details](../images/secretscanningalertdetails.PNG)
+![Secret Scanning - Alert details](https://github.com/Microsoft-Bootcamp/mslabs/raw/main/images/secretscanningalertdetails.PNG)
 
 #### Secret Scanning: Alert notifications
 When a new secret is detected, GitHub notifies all users with access to security alerts for the repository according to their notification preferences. You will receive alerts if you are watching the repository, have enabled notifications for security alerts or for all the activity on the repository, are the author of the commit that contains the secret and are not ignoring the repository.
@@ -140,7 +140,7 @@ You can trigger the Secret Scanning functionality by inserting a secret in your 
 * Go to the [Azure Portal](https://portal.azure.com/)
 * Create, for example, a storage account within your own subscription
 * Once this is created, copy the connection string to the storage account (navigate to `Access keys`)
-  ![Grab an access key from the azure portal](../images/copy-an-access-key.png)
+  ![Grab an access key from the azure portal](https://github.com/Microsoft-Bootcamp/mslabs/raw/main/images/copy-an-access-key.png)
 * Go back to your code
 * Open the file `/TailwindTraders.Website/Source/Tailwind.Traders.Web/appsettings.json`, 
 * At the end of the file, append the file with a `StorageAccountConnectionString` element and paste the copied connection string. 
