@@ -23,7 +23,7 @@ This hands on lab consists of the following steps:
 ## Enabling GitHub Advanced Security on your repository
 Should GitHub Advanced Security not be enabled yet on your repository, you can enable it from the `Settings` menu on your repository, then under `Security & Analysis`, in the section `GitHub Advanced Security`, click `Enable`. Advanced Security should be enabled in order to enable Code Scanning and Secret Scanning.
 
-![Advanced Security - Enable](../images/advancedsecurityenable.PNG)
+![Advanced Security - Enable](https://github.com/Microsoft-Bootcamp/mslabs/blob/main/images/advancedsecurityenable.PNG)
 
 ## Code Scanning: What is it?
 Code scanning is a feature that you use to analyze the code in a GitHub repository to find security vulnerabilities and coding errors. Any problems identified by the analysis are shown in GitHub.
@@ -35,7 +35,7 @@ For GitHub Code Scanning documentation, please refer to: [https://docs.github.co
 ### Enabling the Code Scanning functionality
 To enable GitHub Code Scanning, please navigate to the `Settings` of your repository, click `Security & analysis` click `Set up` for the `Code Scanning` feature.
 
-![Code Scanning - Set up](../images/codescanningsetup.PNG)
+![Code Scanning - Set up](https://github.com/Microsoft-Bootcamp/mslabs/blob/main/images/codescanningsetup.PNG)
 
 You'll be directed to the `Get started with Code Scanning` form, from where you can set up code scanning to use the *CodeQL Analysis* product maintained by GitHub or a third-party code scanning tool. For this lab, we'll pick the CodeQL product. To enable this, you'll click the `Set up this workflow` for the `CodeQL Analysis` product maintained by Github.
 
