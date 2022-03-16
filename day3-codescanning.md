@@ -301,18 +301,18 @@ Regardless of experience, the next steps show you how to add one.
 2. Then, create the actual query file. For example, `custom-queries/javascript/example.ql` with the contents
 
     ```ql
-    /**
-  * @name Empty block
-  * @kind problem
-  * @problem.severity warning
-  * @id javascript/example/empty-block
-  */
+        /**
+      * @name Empty block
+      * @kind problem
+      * @problem.severity warning
+      * @id javascript/example/empty-block
+      */
 
-import javascript
+        import javascript
 
-from BlockStmt b
-where b.getNumStmt() = 0
-select b, "This is an empty block."
+        from BlockStmt b
+        where b.getNumStmt() = 0
+        select b, "This is an empty block."
     ```
 3. Then, add the query to the CodeQL configuration file `.github/codeql/codeql-config.yml`
 
