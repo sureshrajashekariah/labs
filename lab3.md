@@ -153,9 +153,9 @@ To run Valet commands we need to pass in the arguments at each command or we can
 Add the following parameters to the file:
   
 ```
-AZURE_DEVOPS_PROJECT=BootcampLabs
-AZURE_DEVOPS_ORGANIZATION=microsoft-bootcamp
-AZURE_DEVOPS_INSTANCE_URL=https://dev.azure.com/microsoft-bootcamp
+AZURE_DEVOPS_PROJECT=Bootcamp-Technical
+AZURE_DEVOPS_ORGANIZATION=devopsagile
+AZURE_DEVOPS_INSTANCE_URL=https://dev.azure.com/devopsagile/Bootcamp-Technical
 ```
 > NOTE: You need to generate a Personal Access Token for Azure DevOps.
 
@@ -220,7 +220,7 @@ The Bootcamps Azure DevOps pipeline's definition-id is 1.
 
 Then, again from the `valet` folder, we can run the following command to execute the migration:
 ```
-valet migrate azure-devops pipeline --target-url https://github.com/Microsoft-Bootcamp/<your-repo-name> --pipeline-id 1
+valet migrate azure-devops pipeline --target-url https://github.com/Microsoft-Bootcamp/<your-repo-name> --pipeline-id 9
 ```
 
 You will find the following results:
